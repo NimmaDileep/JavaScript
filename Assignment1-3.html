@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <h1>
+            Hello ! This Dileep's first file to display date :) 
+        </h1>
+    </head>
+    <body>
+        <script>
+            var d = new Date();
+            var dd = d.getDate();
+
+            var mm = d.getMonth()+1; 
+            var yyyy = d.getFullYear();
+            if(dd<10) 
+            {
+                dd='0'+dd;
+            } 
+
+            if(mm<10) 
+            {
+                mm='0'+mm;
+            } 
+            date1 = mm+'-'+dd+'-'+yyyy;
+            date2 = mm+'/'+dd+'/'+yyyy;
+            date3 = dd+'-'+mm+'-'+yyyy;
+            date4 = dd+'/'+mm+'/'+yyyy;
+            document.write(date1 + ", " + date2 + ", "+ date3 + ", " + date4)
+        </script>
+    </body>
+</html>
